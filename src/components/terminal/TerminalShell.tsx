@@ -14,7 +14,7 @@ import {
   selectTerminalHistory,
   selectTerminalHistoryIndex,
   selectTerminalInput,
-  selectTerminalTheme,
+  
 } from '../../features/terminal/terminalSelectors'
 import { executeCommand } from '../../features/terminal/terminalCommands'
 import { TerminalOutput } from './TerminalOutput'
@@ -27,7 +27,6 @@ export function TerminalShell() {
   const input = useAppSelector(selectTerminalInput)
   const history = useAppSelector(selectTerminalHistory)
   const historyIndex = useAppSelector(selectTerminalHistoryIndex)
-  const theme = useAppSelector(selectTerminalTheme)
 
   const outputRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -151,13 +150,10 @@ export function TerminalShell() {
   }
 
   return (
-    <main
-      style={{ fontSize: 'var(--terminal-font-size)' }}
-      className={`min-h-screen bg-[var(--bg)] px-3 py-4 text-[var(--text-main)] md:px-8 md:py-8 ${theme === 'phosphor' ? 'theme-phosphor' : ''}`}
-    >
+    <main className={`min-h-screen bg-[var(--bg)] px-3 py-4 text-[var(--text-main)] md:px-8 md:py-8`}>
         <div className="w-full">
           <div className="relative overflow-hidden rounded-none sm:rounded-2xl border border-white/10 bg-[var(--panel)] shadow-2xl shadow-black/40">
-            <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_15%,rgba(249,38,114,0.14),transparent_30%),radial-gradient(circle_at_85%_85%,rgba(102,217,239,0.12),transparent_30%)]"></div>
+            <div className="absolute inset-0 pointer-events-none "></div>
 
             <div style={{ height: 'calc(100vh - 4rem)' }} className="flex flex-col">
               <section
@@ -167,7 +163,7 @@ export function TerminalShell() {
                 <div className="space-y-5">
                   {entries.map((entry) => (
                     <article key={entry.id} className="space-y-2">
-                      <p className="text-sm text-[var(--accent)]">$ {entry.command}</p>
+                      <p className="text-base text-[var(--accent)]">$ {entry.command}</p>
                       <TerminalOutput rows={entry.rows} />
                     </article>
                   ))}

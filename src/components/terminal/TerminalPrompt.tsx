@@ -23,16 +23,16 @@ export function TerminalPrompt({
         onSubmit()
       }}
     >
-      <span className="text-[var(--accent)] text-sm font-medium">guest@portfolio.x64mayank ~</span>
+      <span className="text-[var(--accent)] text-base font-medium">guest@portfolio.x64mayank ~</span>
       <div className="flex items-center gap-2">
-        <span className="text-[var(--accent)] text-sm font-medium whitespace-nowrap">$</span>
+        <span className="text-[var(--accent)] text-base font-medium whitespace-nowrap">$</span>
         <input
           ref={inputRef}
           value={input}
           onChange={(event) => onInputChange(event.target.value)}
           onKeyDown={onKeyDown}
           placeholder="type help"
-          className="flex-1 min-w-0 bg-transparent text-sm text-[var(--text-main)] outline-none placeholder:text-[var(--placeholder)]"
+          className="flex-1 min-w-0 bg-transparent text-base text-[var(--text-main)] outline-none placeholder:text-[var(--placeholder)]"
           aria-label="Terminal command input"
           autoComplete="off"
           spellCheck={false}

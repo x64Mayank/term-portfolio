@@ -2,7 +2,7 @@ import { HELP_TEXT, ORDERED_SECTIONS } from '../../features/terminal/terminalCon
 
 export function HelpPanel() {
   return (
-    <div className="space-y-2 text-sm text-[var(--text-main)]">
+    <div className="space-y-2 text-base text-[var(--text-main)]">
       {HELP_TEXT.map((line) => (
         <p key={line}>{line}</p>
       ))}

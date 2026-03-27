@@ -8,7 +8,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#9ca0ab',
     '--accent': '#a6e22e',
     '--link': '#66d9ef',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   phosphor: {
@@ -18,7 +17,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#8eb289',
     '--accent': '#64ff8f',
     '--link': '#b6ff7a',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   nightowl: {
@@ -28,7 +26,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#7b8a9a',
     '--accent': '#7ee787',
     '--link': '#82aaff',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'monokai-pro': {
@@ -38,7 +35,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#b6b6b6',
     '--accent': '#a9dc76',
     '--link': '#66d9ef',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'high-contrast-black': {
@@ -48,7 +44,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#9e9e9e',
     '--accent': '#ffff00',
     '--link': '#00ffff',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'matrix-green': {
@@ -58,7 +53,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#0f380f',
     '--accent': '#00ff41',
     '--link': '#66ff66',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   rosepine: {
@@ -68,7 +62,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#c7b9d9',
     '--accent': '#eb6f92',
     '--link': '#9ccfd8',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'tokyo-night': {
@@ -78,7 +71,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#7aa2f7',
     '--accent': '#7aa2ff',
     '--link': '#7aa2ff',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'catppuccin-mocha': {
@@ -88,7 +80,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#9aa5c9',
     '--accent': '#f5c2e7',
     '--link': '#89b4fa',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
   'dark-coffee': {
@@ -98,7 +89,6 @@ export const themes: Record<string, ThemeValues> = {
     '--muted': '#bfae9e',
     '--accent': '#dba86b',
     '--link': '#b58968',
-    '--terminal-font-size': '0.875rem',
     '--placeholder': 'rgba(255,255,255,0.5)',
   },
 }

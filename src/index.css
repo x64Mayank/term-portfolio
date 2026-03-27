@@ -7,11 +7,14 @@
     --bg: #0e0f12;
     --panel: #171922;
     --text-main: #f8f8f2;
-    --terminal-font-size: 0.875rem;
     --placeholder: rgba(255,255,255,0.5);
     --muted: #9ca0ab;
     --accent: #a6e22e;
     --link: #66d9ef;
+  }
+
+  html {
+    font-size: 16px;
   }
 
   * {
@@ -27,19 +30,9 @@
   body {
     margin: 0;
     font-family: theme('fontFamily.mono');
-    background:
+     /* background:
       radial-gradient(circle at 15% 15%, rgba(249, 38, 114, 0.1), transparent 34%),
       radial-gradient(circle at 85% 85%, rgba(102, 217, 239, 0.09), transparent 35%),
-      var(--bg);
+      var(--bg);  */
   }
-}
-
-.theme-phosphor {
-  --bg: #0a100a;
-  --panel: #122116;
-  --text-main: #d8ffd0;
-  --terminal-font-size: 0.875rem;
-  --muted: #8eb289;
-  --accent: #64ff8f;
-  --link: #b6ff7a;
 }
